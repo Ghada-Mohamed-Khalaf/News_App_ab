@@ -17,6 +17,9 @@ class NewsLayout extends StatelessWidget {
             return Scaffold(
               appBar: AppBar(
                 title: Text("News App"),
+                actions: [
+                 IconButton(onPressed: (){}, icon:Icon(Icons.search))
+                ],
               ),
               bottomNavigationBar: BottomNavigationBar(
                 items: cubit.bottomItems,
