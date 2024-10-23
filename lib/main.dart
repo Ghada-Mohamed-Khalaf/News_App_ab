@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:news_app_a/layout/news_app/news_layout.dart';
 
 void main() {
@@ -11,8 +12,32 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner:false,
+theme:ThemeData(
+  scaffoldBackgroundColor: Colors.white,
+
+
+  appBarTheme: AppBarTheme(systemOverlayStyle: SystemUiOverlayStyle(
+      statusBarColor: Colors.red,
+    statusBarIconBrightness: Brightness.light,
+
+
+
+  ),
+
+
+
+    elevation: 0.0,
+    backgroundColor: Colors.white,
+
+
+
+
+
+  ),
+
+) ,
 home: NewsLayout(),
     );
   }
