@@ -5,6 +5,6 @@ class BusinessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Text("Business Screen",style: TextStyle(fontWeight:FontWeight.bold,fontSize: 20, ),);
   }
 }
