@@ -15,14 +15,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.orange,
+        ),
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(
+
+
           titleTextStyle:TextStyle(
             color: Colors.black,
             fontSize: 20,
             fontWeight: FontWeight.bold
           ),
           systemOverlayStyle: SystemUiOverlayStyle(
+
             statusBarColor: Colors.red,
             statusBarIconBrightness: Brightness.light,
           ),
