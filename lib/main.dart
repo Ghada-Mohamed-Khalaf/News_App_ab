@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.orange,
+          elevation: 20.0,
         ),
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(

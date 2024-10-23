@@ -5,6 +5,8 @@ import 'package:news_app_a/modules/business/business_screen.dart';
 import 'package:news_app_a/modules/science/science_screen.dart';
 import 'package:news_app_a/modules/sports/sport_screen.dart';
 
+import '../../../modules/settings/settings_screen.dart';
+
 class NewsCubit extends Cubit<NewsStates> {
   NewsCubit() :super(NewsInitialState());
 
@@ -27,11 +29,17 @@ class NewsCubit extends Cubit<NewsStates> {
       label: "science",
 
     ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.settings),
+      label: "Settings",
+
+    ),
   ];
   List<Widget> screen =[
     BusinessScreen(),
     SportScreen(),
     ScienceScreen(),
+    SettingsScreen(),
 
   ];
   void changeBottomNavBar(int index ){

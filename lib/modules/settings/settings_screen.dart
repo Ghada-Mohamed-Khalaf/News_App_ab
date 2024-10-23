@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SportScreen extends StatelessWidget {
-  const SportScreen({super.key});
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: const Text(
-        "Sport Screen",
+        "Settings Screen",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20,
